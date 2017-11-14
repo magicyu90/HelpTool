@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data valid="1"/>
+
+<suslist>
+    <sus label="1">
+        <typeinfo mainclassid="6" mainclassname="禁止类-刀" subclassid="1" subclassname="管制刀具"/>
+        <physical mass="0" density="0"/>
+        <d3sus x1="226" y1="100" z1="207" x2="500" y2="138" z2="224"/>
+        <drsus1 x1="226" y1="875" x2="204" y2="443"/>
+        <drsus2 x1="0" y1="0" x2="0" y2="0"/>
+        <note></note>
+    </sus>
+    <sus label="2">
+        <typeinfo mainclassid="4" mainclassname="客带货" subclassid="4" subclassname="大量药品/保健品"/>
+        <physical mass="0" density="0"/>
+        <d3sus x1="144" y1="34" z1="65" x2="518" y2="202" z2="200"/>
+        <drsus1 x1="198" y1="940" x2="63" y2="272"/>
+        <drsus2 x1="0" y1="0" x2="0" y2="0"/>
+        <note></note>
+    </sus>
+</suslist>
