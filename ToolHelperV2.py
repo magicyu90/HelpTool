@@ -1,11 +1,15 @@
-#coding=utf-8
+# coding=utf-8
 import codecs
 import os.path
 import xml.etree.ElementTree as ET
 import shutil
 
+srcDir = "E:\\zx"
+destDir = "E:\\zxcopy"
+dirs = os.listdir(srcDir)
 
 def copytree(src, dst, symlinks=False, ignore=None):
+    '''Copy src directory to dest directory'''
     for item in os.listdir(src):
         s = os.path.join(src, item)
         d = os.path.join(dst, item)
@@ -14,13 +18,8 @@ def copytree(src, dst, symlinks=False, ignore=None):
         else:
             shutil.copy2(s, d)
 
-
-srcDir = "E:\\zx"
-destDir = "E:\\zxcopy"
-dirs = os.listdir(srcDir)
-
-for dir in dirs:
-    dirToEnter = srcDir + "\\" + dir + "\\" + "ManualLabel"
+for currentDir in dirs:
+    dirToEnter = srcDir + "\\" + currentDir + "\\" + "ManualLabel"
     manualLabelFiles = os.listdir(dirToEnter)
     for file in manualLabelFiles:
         if file.endswith('.xml'):
@@ -32,5 +31,6 @@ for dir in dirs:
                 if line.startswith('<sus label='):
                     labelCount += 1
             if labelCount == 1:
-                print('copy dir:', srcDir + "\\" + dir)
-                copytree(srcDir + "\\" + dir, destDir + "\\" + dir)
+                print('copy dir:', srcDir + "\\" + currentDir)
+                copytree(srcDir + "\\" + currentDir,
+                         destDir + "\\" + currentDir)

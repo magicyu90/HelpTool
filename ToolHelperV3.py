@@ -25,7 +25,6 @@ def copytree(src, dst, symlinks=False, ignore=None):
         else:
             shutil.copy2(s, d)
 
-
 for currentDir in dirs:
     dirToEnter = srcDir + "\\" + currentDir + "\\" + "ManualLabel"
     manualLabelFiles = os.listdir(dirToEnter)
