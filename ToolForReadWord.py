@@ -13,13 +13,13 @@ currentIndex = 0
 for para in doc.paragraphs:
     a = re.search(r'\d+、', para.text)  # 题干
     b = re.search(r'^\（A\）|\（B\）|\（C\）|\（D\）', para.text)  # 选项
-    if a:
+    if a:  # 如果有题号
         currentIndex = int(a.group(0)[:-1], 10)
         item = {'number': currentIndex, 'topic': '',
-                'answers': [], 'right answers': []}
-        item['topic'] += (para.text)
+                'answers': [], 'right answers': [], 'type': 'judge'}
+        item['topic'] += para.text
         topics.append(item)
-    elif b:
+    elif b:  # 如果有选项
         ans = [answer for answer in re.split(
             r'\（A\）|\（B\）|\（C\）|\（D\）', para.text) if answer != '']
         for item in topics:
@@ -36,4 +36,14 @@ for para in doc.paragraphs:
                 for item in topics:
                     if item['number'] == currentIndex:
                         item['right answers'].extend(run.text)
+                        if len(item['right answers']) > 1:
+                            item['type'] = 'mul'
+                        else:
+                            item['type'] = 'single'
+                        break
+    else:  # 题干剩余部分
+        for item in topics:
+            if item['number'] == currentIndex:
+                item['topic'] += para.text
+
 print(topics)
