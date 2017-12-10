@@ -36,8 +36,10 @@ def extract_word():
         return red > green and red > blue
 
     for para in doc.paragraphs:
-        a = re.search(r'\d+、', para.text)  # 题干
-        b = re.search(r'^\（A\）|\（B\）|\（C\）|\（D\）', para.text)  # 选项
+        topic_regex = re.compile(r'\d+、')
+        topic_option_regex = re.compile(r'^\（A\）|\（B\）|\（C\）|\（D\）')
+        a = topic_regex .search(para.text)  # 题干
+        b = topic_option_regex.search(para.text)  # 选项
         if a:  # 如果有题号
             current_topic_number = int(a.group(0)[:-1], 10)
             # 默认题目（题目类型是判断题）
@@ -52,6 +54,7 @@ def extract_word():
                 else:
                     topic['right answers'].extend("N")
         elif b:  # 如果有选项
+            # my_regex = re.compile(r'(\([A-Z]\)[a-zA-Z0-9_\u4e00-\u9fa5]+\s)') 可以参考
             ans = [answer for answer in re.split(
                 r'\（A\）|\（B\）|\（C\）|\（D\）', para.text) if answer != '']
             topic = get_topic_by_number(current_topic_number)

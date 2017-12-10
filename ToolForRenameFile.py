@@ -11,10 +11,12 @@ helixSEName = "HelixSE"
 dirCount = 1
 for currentDir in dirs:
     dirNewName = "knife%06d" % dirCount
-    files = os.listdir(srcDir + "\\" + currentDir)
+    #files = os.listdir(srcDir + "\\" + currentDir)
+    files = os.listdir(os.path.join(srcDir, currentDir))
     for fileName in files:
-        filePath = srcDir + "\\" + currentDir
-        if not os.path.isdir(filePath + "\\" + fileName):  # 文件
+        # filePath = srcDir + "\\" + currentDir
+        filePath = os.path.join(srcDir, currentDir)
+        if not os.path.isdir(os.path.join(filePath, fileName)):  # 文件
             fileExtensionIndex = fileName.rfind('.')
             fileExtension = fileName[fileExtensionIndex:]
             # 对于以pi、db、raw结尾的文件不进行处理
