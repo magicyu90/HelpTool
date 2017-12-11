@@ -11,13 +11,17 @@ def extract_word():
     Extract word
     """
     doc = docx.Document(
-        'C:\\Users\\shenyu1.NUCTECH\\Desktop\\test - Copy.docx')
-    topics = []
-    current_topic_number = 0
+        'E:\\files\\nuctech\\Training System\\testa.docx')  # word文件
+    topics = []  # 考题数组
+    current_topic_number = 0  # 当前考题题号
+    topic_regex = re.compile(r'\d+、')  # 题目正则表达式
+    topic_option_regex = re.compile(r'\（[A-D]\）')  # 题目选项的正则表达式
+    topic_option_des_regex = re.compile(
+        r'(?:\([A-D]\)|\（[A-D]\）)[a-zA-Z0-9_\u4e00-\u9fa5,，\s、\.《》]+')  # 题目选线描述的正则表达式
 
     def get_topic_by_number(number):
         """
-        Find topic by topic number
+        根据题号筛选题目
         :type number: int
         """
         item = None
@@ -27,7 +31,7 @@ def extract_word():
 
     def judge_font_isred(rgb):
         """
-        Judge color rgb is near to red or not
+        判断颜色是否接近红色
         """
         color = int('0x' + rgb.__str__(), 16)
         red = (color & 0xff0000) >> 16
@@ -36,12 +40,10 @@ def extract_word():
         return red > green and red > blue
 
     for para in doc.paragraphs:
-        topic_regex = re.compile(r'\d+、')
-        topic_option_regex = re.compile(r'^\（A\）|\（B\）|\（C\）|\（D\）')
-        a = topic_regex .search(para.text)  # 题干
-        b = topic_option_regex.search(para.text)  # 选项
+        a = topic_regex.search(para.text)
+        b = topic_option_regex.search(para.text)
         if a:  # 如果有题号
-            current_topic_number = int(a.group(0)[:-1], 10)
+            current_topic_number = int(a.group(0)[:-1])
             # 默认题目（题目类型是判断题）
             topic = {'number': current_topic_number, 'topic': '',
                      'answers': [], 'right answers': [], 'type': 'J'}
@@ -54,16 +56,16 @@ def extract_word():
                 else:
                     topic['right answers'].extend("N")
         elif b:  # 如果有选项
-            # my_regex = re.compile(r'(\([A-Z]\)[a-zA-Z0-9_\u4e00-\u9fa5]+\s)') 可以参考
-            ans = [answer for answer in re.split(
-                r'\（A\）|\（B\）|\（C\）|\（D\）', para.text) if answer != '']
+            # ans = [answer for answer in topic_option_regex.split(
+            #     para.text) if answer != '']
+            ans = topic_option_des_regex.findall(para.text)
             topic = get_topic_by_number(current_topic_number)
             if topic:
                 topic['answers'].extend(ans)
             for run in para.runs:
                 if run.font.color.rgb != None:
                     is_red = judge_font_isred(run.font.color.rgb)
-                    if is_red and (run.text == "A" or run.text == "B" or run.text == "C" or run.text == "D"):
+                    if is_red and run.text in "ABCD":
                         topic = get_topic_by_number(current_topic_number)
                         if topic:
                             if 'N' in topic['right answers']:
@@ -77,10 +79,13 @@ def extract_word():
                                 topic['type'] = 'S'
         else:  # 题干剩余部分
             topic = get_topic_by_number(current_topic_number)
-            if topic:
+            if topic and len(topic['answers']) == 0:
                 topic['topic'] += para.text
 
     print(topics)
 
 
-extract_word()
+if __name__ == '__main__':
+    print('--------------------开始提取word--------------------')
+    extract_word()
+    print('--------------------提取word结束--------------------')
