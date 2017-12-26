@@ -3,7 +3,7 @@ import os
 import shutil
 
 # currentpath = os.getcwd()
-currentpath = "C:\\Users\\shenyu1.NUCTECH\Desktop\\test"
+currentpath = "F:\\试用提供\\safeDR2596\\DR"
 
 # for file in os.listdir(currentpath):
 #     filename = os.path.splitext(file)[0]
@@ -24,7 +24,7 @@ def move_image(path):
         if os.path.isdir(os.path.join(path, file)):
             move_image(os.path.join(path, file))
         else:
-            if extension == ".img":
+            if extension == ".IMG":
                 newdirpath = os.path.join(path, filename)
                 if not os.path.exists(newdirpath):
                     os.makedirs(newdirpath)
