@@ -1,0 +1,256 @@
+1514876192293	geckodriver	INFO	geckodriver 0.19.1
+1514876192302	geckodriver	INFO	Listening on 127.0.0.1:19570
+1514876194361	mozrunner::runner	INFO	Running command: "D:\\Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\shenyu1.NUCTECH\\AppData\\Local\\Temp\\rust_mozprofile.xZicR7QEfKCl"
+1514876195067	Marionette	INFO	Enabled via --marionette
+1514876197786	Marionette	INFO	Listening on port 19576
+1514876197982	Marionette	WARN	TLS certificate errors will be ignored for this session
+1514876198046	Marionette	DEBUG	Register listener.js for window 4294967297
+1514876198067	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1514876220263	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1514876220308	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1514876221506	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://www.seleniumhq.org/"
+1514876223685	Marionette	DEBUG	Received DOM event "pageshow" for "http://www.seleniumhq.org/"
+Unable to read VR Path Registry from C:\Users\shenyu1.NUCTECH\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 17924, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 17924, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\shenyu1.NUCTECH\AppData\Local\openvr\openvrpaths.vrpath
+[Child 19340, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 19340, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\shenyu1.NUCTECH\AppData\Local\openvr\openvrpaths.vrpath
+[Child 18044, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 18044, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\shenyu1.NUCTECH\AppData\Local\openvr\openvrpaths.vrpath
+[GPU 768, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+ontentLoaded" for "http://mobile.anjianba.cn/signUp"
+1514876275993	Marionette	DEBUG	Received DOM event "pageshow" for "http://mobile.anjianba.cn/signUp"
+1514876276269	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876280212	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876283455	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+JavaScript warning: resource://devtools/shared/base-loader.js -> resource://devtools/client/shared/demangle.js, line 0: Successfully compiled asm.js code (total compilation time 53ms; unable to cache asm.js in synchronous scripts; try loading asm.js via <script async> or createElement('script'))
+[Parent 18252, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 18252, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\shenyu1.NUCTECH\AppData\Local\openvr\openvrpaths.vrpath
+[Child 7720, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 7720, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\shenyu1.NUCTECH\AppData\Local\openvr\openvrpaths.vrpath
+[Child 19068, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 19068, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\shenyu1.NUCTECH\AppData\Local\openvr\openvrpaths.vrpath
+[GPU 18680, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1514876426693	geckodriver	INFO	geckodriver 0.19.1
+1514876426700	geckodriver	INFO	Listening on 127.0.0.1:19772
+1514876428713	mozrunner::runner	INFO	Running command: "D:\\Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\shenyu1.NUCTECH\\AppData\\Local\\Temp\\rust_mozprofile.OtkPuRYp3U8i"
+1514876429428	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\shenyu1.NUCTECH\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 15812, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\shenyu1.NUCTECH\AppData\Local\openvr\openvrpaths.vrpath
+[Child 18524, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 18524, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1514876431755	Marionette	INFO	Listening on port 19779
+1514876431841	Marionette	WARN	TLS certificate errors will be ignored for this session
+1514876431892	Marionette	DEBUG	Register listener.js for window 4294967297
+1514876431920	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1514876431947	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1514876431947	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1514876432254	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://mobile.anjianba.cn/signUp"
+1514876432292	Marionette	DEBUG	Received DOM event "pageshow" for "http://mobile.anjianba.cn/signUp"
+1514876432591	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876436488	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876439732	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876446975	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876448204	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876449438	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876450675	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876451905	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876453132	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876454372	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876455594	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876456826	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876458057	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876459072	Marionette	DEBUG	Received DOM event "beforeunload" for "http://mobile.anjianba.cn/pk/detail"
+1514876459129	Marionette	DEBUG	Received DOM event "pagehide" for "http://mobile.anjianba.cn/pk/detail"
+1514876459130	Marionette	DEBUG	Received DOM event "unload" for "http://mobile.anjianba.cn/pk/detail"
+1514876459384	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://mobile.anjianba.cn/pk/detail"
+1514876459398	Marionette	DEBUG	Received DOM event "pageshow" for "http://mobile.anjianba.cn/pk/detail"
+1514876466709	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876467935	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876469167	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876470396	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876471626	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876472853	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876474081	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876475319	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876476541	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876477768	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876478783	Marionette	DEBUG	Received DOM event "beforeunload" for "http://mobile.anjianba.cn/pk/detail"
+1514876478836	Marionette	DEBUG	Received DOM event "pagehide" for "http://mobile.anjianba.cn/pk/detail"
+1514876478836	Marionette	DEBUG	Received DOM event "unload" for "http://mobile.anjianba.cn/pk/detail"
+1514876479100	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://mobile.anjianba.cn/pk/detail"
+1514876479104	Marionette	DEBUG	Received DOM event "pageshow" for "http://mobile.anjianba.cn/pk/detail"
+1514876486445	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876487675	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876488899	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876490124	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876491354	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876492579	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876493817	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876495046	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876496274	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876497502	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876498517	Marionette	DEBUG	Received DOM event "beforeunload" for "http://mobile.anjianba.cn/pk/detail"
+1514876498553	Marionette	DEBUG	Received DOM event "pagehide" for "http://mobile.anjianba.cn/pk/detail"
+1514876498553	Marionette	DEBUG	Received DOM event "unload" for "http://mobile.anjianba.cn/pk/detail"
+1514876498793	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://mobile.anjianba.cn/pk/detail"
+1514876498799	Marionette	DEBUG	Received DOM event "pageshow" for "http://mobile.anjianba.cn/pk/detail"
+1514876506067	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876507291	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876508517	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876509743	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876510965	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876512191	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876513413	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876514637	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876515859	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876517080	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876518098	Marionette	DEBUG	Received DOM event "beforeunload" for "http://mobile.anjianba.cn/pk/detail"
+1514876518138	Marionette	DEBUG	Received DOM event "pagehide" for "http://mobile.anjianba.cn/pk/detail"
+1514876518139	Marionette	DEBUG	Received DOM event "unload" for "http://mobile.anjianba.cn/pk/detail"
+1514876518383	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://mobile.anjianba.cn/pk/detail"
+1514876518387	Marionette	DEBUG	Received DOM event "pageshow" for "http://mobile.anjianba.cn/pk/detail"
+1514876520553	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
+1514876525646	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876526869	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876528091	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876529360	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876530587	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876531814	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876533046	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876534271	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876535505	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876536729	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876537743	Marionette	DEBUG	Received DOM event "beforeunload" for "http://mobile.anjianba.cn/pk/detail"
+1514876537800	Marionette	DEBUG	Received DOM event "pagehide" for "http://mobile.anjianba.cn/pk/detail"
+1514876537801	Marionette	DEBUG	Received DOM event "unload" for "http://mobile.anjianba.cn/pk/detail"
+1514876538032	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://mobile.anjianba.cn/pk/detail"
+1514876538035	Marionette	DEBUG	Received DOM event "pageshow" for "http://mobile.anjianba.cn/pk/detail"
+1514876545216	Marionette	DEBUG	Received DOM event "beforeunload" for "http://mobile.anjianba.cn/pk/detail"
+1514876545291	Marionette	DEBUG	Received DOM event "pagehide" for "http://mobile.anjianba.cn/pk/detail"
+1514876545291	Marionette	DEBUG	Received DOM event "unload" for "http://mobile.anjianba.cn/pk/detail"
+1514876545293	Marionette	DEBUG	Received observer notification "outer-window-destroyed" for "4294967297"
+JavaScript error: resource://devtools/shared/base-loader.js -> resource://devtools/client/netmonitor/src/connector/firefox-connector.js, line 74: TypeError: this.tabTarget is null
+[Parent 15812, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\shenyu1.NUCTECH\AppData\Local\openvr\openvrpaths.vrpath
+[Child 10988, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 10988, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\shenyu1.NUCTECH\AppData\Local\openvr\openvrpaths.vrpath
+[Child 3476, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 3476, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\shenyu1.NUCTECH\AppData\Local\openvr\openvrpaths.vrpath
+[GPU 16584, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1514876546345	geckodriver::marionette	ERROR	Failed to kill browser process
+1514876578288	geckodriver	INFO	geckodriver 0.19.1
+1514876578318	geckodriver	INFO	Listening on 127.0.0.1:20124
+1514876580359	mozrunner::runner	INFO	Running command: "D:\\Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\shenyu1.NUCTECH\\AppData\\Local\\Temp\\rust_mozprofile.sB3nvddWcUbq"
+1514876581140	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\shenyu1.NUCTECH\AppData\Local\openvr\openvrpaths.vrpath
+[Child 16508, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 16508, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1514876583303	Marionette	INFO	Listening on port 20130
+1514876583498	Marionette	WARN	TLS certificate errors will be ignored for this session
+1514876583558	Marionette	DEBUG	Register listener.js for window 4294967297
+1514876588701	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1514876588731	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1514876588731	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1514876589090	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://mobile.anjianba.cn/signUp"
+1514876589099	Marionette	DEBUG	Received DOM event "pageshow" for "http://mobile.anjianba.cn/signUp"
+1514876629485	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+console.error: 
+  Got a removal of an actor we didn't know about: server1.conn0.child1/domnode70
+1514876670787	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876687048	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+Unable to read VR Path Registry from C:\Users\shenyu1.NUCTECH\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript error: resource://devtools/shared/base-loader.js -> resource://devtools/server/actors/highlighters/auto-refresh.js, line 201: TypeError: this.win is null
+JavaScript error: resource://devtools/shared/base-loader.js -> resource://devtools/server/actors/highlighters/auto-refresh.js, line 201: TypeError: this.win is null
+JavaScript error: resource://devtools/shared/base-loader.js -> resource://devtools/server/actors/highlighters/auto-refresh.js, line 201: TypeError: this.win is null
+JavaScript error: resource://devtools/shared/base-loader.js -> resource://devtools/server/actors/highlighters/auto-refresh.js, line 201: TypeError: this.win is null
+JavaScript error: resource://devtools/shared/base-loader.js -> resource://devtools/server/actors/highlighters/auto-refresh.js, line 201: TypeError: this.win is null
+JavaScript error: resource://devtools/shared/base-loader.js -> resource://devtools/server/actors/highlighters/auto-refresh.js, line 201: TypeError: this.win is null
+Unable to read VR Path Registry from C:\Users\shenyu1.NUCTECH\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 16904, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 19576, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 19576, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\shenyu1.NUCTECH\AppData\Local\openvr\openvrpaths.vrpath
+[Child 17276, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 17276, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\shenyu1.NUCTECH\AppData\Local\openvr\openvrpaths.vrpath
+[GPU 19332, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1514876734962	geckodriver	INFO	geckodriver 0.19.1
+1514876734970	geckodriver	INFO	Listening on 127.0.0.1:20244
+1514876737034	mozrunner::runner	INFO	Running command: "D:\\Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\shenyu1.NUCTECH\\AppData\\Local\\Temp\\rust_mozprofile.s7tF3mBnku8a"
+1514876737786	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\shenyu1.NUCTECH\AppData\Local\openvr\openvrpaths.vrpath
+[Child 16408, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 16408, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1514876740365	Marionette	INFO	Listening on port 20251
+1514876740653	Marionette	WARN	TLS certificate errors will be ignored for this session
+1514876740703	Marionette	DEBUG	Register listener.js for window 4294967297
+1514876743609	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1514876743632	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1514876743632	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1514876743982	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://mobile.anjianba.cn/signUp"
+1514876743999	Marionette	DEBUG	Received DOM event "pageshow" for "http://mobile.anjianba.cn/signUp"
+1514876754695	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876761082	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876767881	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876784008	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876785247	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876786484	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876787726	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876788964	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876790200	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876791438	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876792680	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876793921	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876795156	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876796175	Marionette	DEBUG	Received DOM event "beforeunload" for "http://mobile.anjianba.cn/pk/detail"
+1514876796208	Marionette	DEBUG	Received DOM event "pagehide" for "http://mobile.anjianba.cn/pk/detail"
+1514876796208	Marionette	DEBUG	Received DOM event "unload" for "http://mobile.anjianba.cn/pk/detail"
+1514876796437	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://mobile.anjianba.cn/pk/detail"
+1514876796442	Marionette	DEBUG	Received DOM event "pageshow" for "http://mobile.anjianba.cn/pk/detail"
+1514876803707	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876804943	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876806183	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876807422	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876808655	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876809895	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876811140	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876812386	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876813631	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876814878	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876815905	Marionette	DEBUG	Received DOM event "beforeunload" for "http://mobile.anjianba.cn/pk/detail"
+1514876815932	Marionette	DEBUG	Received DOM event "pagehide" for "http://mobile.anjianba.cn/pk/detail"
+1514876815932	Marionette	DEBUG	Received DOM event "unload" for "http://mobile.anjianba.cn/pk/detail"
+1514876816171	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://mobile.anjianba.cn/pk/detail"
+1514876816175	Marionette	DEBUG	Received DOM event "pageshow" for "http://mobile.anjianba.cn/pk/detail"
+1514876823459	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876824703	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876825947	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876827188	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876828425	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876829664	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876830907	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876832144	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876833382	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1514876834626	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
