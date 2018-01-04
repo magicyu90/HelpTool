@@ -1,6 +1,7 @@
 __author__ = 'Hugo'
 # coding:utf-8
 from urllib import request
+from bs4 import BeautifulSoup
 import re
 
 
@@ -34,9 +35,13 @@ class BDTB:
 
     def getPostContent(self):
         content = self.content
-        pattern = re.compile(r'<div id="post_content_.*?>(.*?)</div>')
-        items = re.findall(pattern, content)
-        for item in items:
+        # pattern = re.compile(r'<div id="post_content_.*?>(.*?)</div>')
+        # items = re.findall(pattern, content)
+        # for item in items:
+        #     print(item)
+        #------find post by beautifulSoup-----
+        soup = BeautifulSoup(self.content, 'html.parser')
+        for item in soup.find_all('div', class_='d_post_content j_d_post_content '):
             print(item)
 
 
