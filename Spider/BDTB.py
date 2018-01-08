@@ -1,6 +1,7 @@
 __author__ = 'Hugo'
 # coding:utf-8
 from urllib import request
+from urllib.error import URLError, HTTPError
 from bs4 import BeautifulSoup
 import re
 import os
@@ -37,8 +38,8 @@ class Tool:
 
 
 class BDTB:
-    def __init__(self, baseUrl, see_lz):
-        self.baseUrl = baseUrl
+    def __init__(self, base_url, see_lz):
+        self.baseUrl = base_url
         self.seeLZ = '?see_lz=' + str(see_lz)
         self.content = ''
         self.page = None
