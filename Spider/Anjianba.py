@@ -36,16 +36,15 @@ class AnjianbaBa:
         '''
         递归展开组织机构节点并记录相应节点ID
         '''
-        self.orgIds.append(item.get_attribute('id'))
-        # 展开节点
-        item.find_elements_by_xpath("*")[0].click()
-        time.sleep(1)
-        children = item.find_elements_by_xpath(
-            "//ul[@class='level%d ']//li[@class='level%d']" % (level, level + 1))
-        if children:
-            for li in children:
-                if li.get_attribute('id') not in self.orgIds:
-                    self.orgIds.append(li.get_attribute('id'))
+        if item.get_attribute('id') not in self.orgIds:
+            self.orgIds.append(item.get_attribute('id'))
+            # 展开节点
+            item.find_elements_by_xpath("*")[0].click()
+            time.sleep(1)
+            children = item.find_elements_by_xpath(
+                "//ul[@class='level%d ']//li[@class='level%d']" % (level, level + 1))
+            if children:
+                for li in children:
                     current_level = int(li.get_attribute('class')[5:])
                     self.clickOrg(li, current_level)
 
@@ -78,7 +77,9 @@ class AnjianbaBa:
             # 进入用户创建页面
             self.driver.find_element_by_link_text(u'用户管理').click()
             time.sleep(2)
+            # 添加用户
             self.driver.find_element_by_id('add_userinfo').click()
+            time.sleep(1)
             appendix = time.strftime('%H:%M')
             # 姓名
             self.driver.find_element_by_id(
@@ -88,50 +89,50 @@ class AnjianbaBa:
             self.driver.find_element_by_id('input_jobNo').send_keys('ssadsa12')
             time.sleep(1)
             # 身份类型
-            # self.driver.find_element_by_id('input_userType').click()
-            # time.sleep(2)
-            # u_type = self.driver.find_element_by_xpath(
-            #     "//ul[@id = 'input_userType-select']//li[@data-select-id='%d']" % random.randint(1, 3))
-            # u_type.click()
-            # time.sleep(1)
+            self.driver.find_element_by_id('input_userType').click()
+            time.sleep(1)
+            u_type = self.driver.find_element_by_xpath(
+                "//ul[@id = 'input_userType-select']//li[@data-select-id='%d']" % random.randint(1, 3))
+            u_type.click()
+            time.sleep(1)
             # 机构
             self.driver.find_element_by_id('input_userOrg').click()
-            time.sleep(2)
+            time.sleep(1)
             orgs = self.driver.find_elements_by_xpath(
                 "//ul[@id = 'ul_ztree_input_userOrg']//li[@class='level0']")
             for org in orgs:
                 self.clickOrg(org, 0)
             org_count = len(self.orgIds)
             print(self.orgIds)
-            print(random.randint(0, org_count - 1))
-            print(random.randint(0, org_count - 1))
-            print(random.randint(0, org_count - 1))
-            print(random.randint(0, org_count - 1))
-            # self.driver.find_element_by_id(
-            #     self.orgIds[random.randint(0, org_count - 1)]).find_elements_by_xpath('*')[1].click()
+            self.driver.find_element_by_id(
+                self.orgIds[random.randint(0, org_count - 1)]).find_elements_by_xpath('*')[1].click()
             time.sleep(1)
             # 技能
-            # self.driver.find_element_by_id('input_grade').click()
-            # time.sleep(2)
-            # grade = self.driver.find_element_by_xpath(
-            #     "//ul[@id = 'input_grade-select']//li[@data-select-id='%d']" % random.randint(1, 4))
-            # grade.click()
-            # time.sleep(1)
+            self.driver.find_element_by_id('input_grade').click()
+            time.sleep(1)
+            grade = self.driver.find_element_by_xpath(
+                "//ul[@id = 'input_grade-select']//li[@data-select-id='%d']" % random.randint(1, 4))
+            grade.click()
+            time.sleep(1)
             # 岗位
-            # self.driver.find_element_by_id('input_post').click()
-            # time.sleep(2)
-            # position = self.driver.find_element_by_xpath(
-            #     "//ul[@id = 'input_post-select']//li[@data-select-id='%d']" % random.randint(1, 4))
-            # position.click()
-            # time.sleep(1)
+            self.driver.find_element_by_id('input_post').click()
+            time.sleep(1)
+            position = self.driver.find_element_by_xpath(
+                "//ul[@id = 'input_post-select']//li[@data-select-id='%d']" % random.randint(1, 4))
+            position.click()
+            time.sleep(1)
 
             # 提交(Danger!)
             # self.driver.find_element_by_id('btn_submit').click()
 
+            # 关闭
+            self.driver.find_element_by_class_name(
+                'layui-layer-close1').click()
+            time.sleep(2)
         except error.URLError as e:
             print('URLError:' + e.reason)
         finally:
-            pass
+            self.driver.close()
 
 
 aj_spider = AnjianbaBa('http:www.anjianba.cn')
