@@ -3,7 +3,7 @@ import codecs
 import os
 import shutil
 
-srcDir = "F:\\移动端图片汇总\\safe"
+srcDir = "C:\\Users\\shenyu1.NUCTECH\\Desktop\\dangerbaggage"
 files = os.listdir(srcDir)
 dirname = os.path.basename(srcDir)
 
