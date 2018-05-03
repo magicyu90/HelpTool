@@ -3,15 +3,15 @@ import codecs
 import os
 import shutil
 
-srcDir = "G:\\HS"
-# srcDir="C:\\Users\\shenyu1.NUCTECH\\Desktop\\HS"
+srcDir = "G:\\英文卢顿图库200新版\\11\\1199"
+#srcDir = "G:\\hao\\06-lixi"
 dirs = os.listdir(srcDir)
 helixName = "Helix"
 helixSEName = "HelixSE"
 
 dirCount = 1
 for currentDir in dirs:
-    dirNewName = "%04d" % dirCount
+    dirNewName = "FalseAlarm%04d" % dirCount
     try:
         # if os.path.exists(srcDir + "\\" + "bomb%s" % dirNewName):
         #     dirCount += 1
@@ -57,7 +57,7 @@ for currentDir in dirs:
                                   filePath + "\\" + helixNewName)
     except Exception as ex:
         print('Error happend:%s' % str(ex))
-        #continue
+        # continue
 
-    os.rename(srcDir + "\\" + currentDir, srcDir + "\\" + "bomb%s" % dirNewName)
+    os.rename(srcDir + "\\" + currentDir, srcDir + "\\" + dirNewName)
     dirCount += 1
