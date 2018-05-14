@@ -3,21 +3,16 @@ import codecs
 import os
 import shutil
 
-srcDir = "G:\\英文卢顿图库200新版\\11\\1199"
+srcDir = "G:\\英国卢顿20180504\\新建文件夹"
 #srcDir = "G:\\hao\\06-lixi"
 dirs = os.listdir(srcDir)
-helixName = "Helix"
-helixSEName = "HelixSE"
+helixName = "helix"
+helixSEName = "helixse"
 
-dirCount = 1
+dirCount = 122
 for currentDir in dirs:
-    dirNewName = "FalseAlarm%04d" % dirCount
+    dirNewName = "Bomb%04d" % dirCount
     try:
-        # if os.path.exists(srcDir + "\\" + "bomb%s" % dirNewName):
-        #     dirCount += 1
-        #     continue
-        # print(dirNewName)
-        # files = os.listdir(srcDir + "\\" + currentDir)
         files = os.listdir(os.path.join(srcDir, currentDir))
         for fileName in files:
             # filePath = srcDir + "\\" + currentDir
@@ -25,13 +20,12 @@ for currentDir in dirs:
             if not os.path.isdir(os.path.join(filePath, fileName)):  # 文件
                 fileExtensionIndex = fileName.rfind('.')
                 fileExtension = fileName[fileExtensionIndex:]
-                # 对于以pi、db、raw结尾的文件不进行处理
-            # print(fileName)
 
                 if fileExtension == '.jpg' and 'OB' in fileName[:2]:
                     continue
+                # 对于以pi、db、raw结尾的文件不进行处理
                 if fileExtension != '.pi' and fileExtension != '.db' and fileExtension != '.raw':
-                    if fileName.find('_') != -1:
+                    if fileName.find('_') != -1:  # 名字中带有'_'
                         indexToChange = fileName.find('_')
                         print("change name contains '_':", fileName)
                         newName = dirNewName + fileName[indexToChange:]
@@ -45,7 +39,7 @@ for currentDir in dirs:
 
             else:
                 # 只处理Helix和HelixSE文件夹
-                if fileName == helixName or fileName == helixSEName:
+                if fileName.lower() == helixName or fileName.lower() == helixSEName:
                     filePath = filePath + "\\" + fileName
                     helixFiles = os.listdir(filePath)
                     for helixFileName in helixFiles:
