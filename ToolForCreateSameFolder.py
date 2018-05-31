@@ -5,18 +5,6 @@ import shutil
 # currentpath = os.getcwd()
 currentpath = "C:\\Users\\shenyu1.NUCTECH\\Desktop\\TIP"
 
-# for file in os.listdir(currentpath):
-#     filename = os.path.splitext(file)[0]
-#     extension = os.path.splitext(file)[1]
-#     filepath = os.path.join(currentpath, file)
-#     if extension == '.img':
-#         print(file)
-#         newdirpath = os.path.join(currentpath, filename)
-#         if not os.path.exists(newdirpath):
-#             os.makedirs(newdirpath)
-#             shutil.move(filepath, newdirpath)
-
-
 
 def move_image(path):
     for file in os.listdir(path):

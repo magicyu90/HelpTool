@@ -3,15 +3,16 @@ import codecs
 import os
 import shutil
 
-srcDir = r"H:\新建文件夹"
+srcDir = r"G:\TIP图库\12\ba"
 #srcDir = "G:\\hao\\06-lixi"
 dirs = os.listdir(srcDir)
 helixName = "helix"
 helixSEName = "helixse"
 
-dirCount = 3138
+dirCount = 1400
+index_to_change = 1
 for currentDir in dirs:
-    dirNewName = "CTIbomb%04d" % dirCount
+    dirNewName = "Gun%04d" % dirCount
     try:
         files = os.listdir(os.path.join(srcDir, currentDir))
         for fileName in files:
@@ -26,16 +27,11 @@ for currentDir in dirs:
                 # 对于以pi、db、raw结尾的文件不进行处理
                 if fileExtension != '.pi' and fileExtension != '.db' and fileExtension != '.raw':
                     if fileName.find('_') != -1:  # 名字中带有'_'
-                        indexToChange = fileName.find('_')
-                        print("change name contains '_':", fileName)
-                        newName = dirNewName + fileName[indexToChange:]
-                        os.rename(filePath + "\\" + fileName,
-                                  filePath + "\\" + newName)
-                    else:
-                        print('change name directly:', fileName)
-                        newName = dirNewName + fileExtension
-                        os.rename(filePath + "\\" + fileName,
-                                  filePath + "\\" + newName)
+                        indexToChange = fileName.find('_Gun_%04d_1' % index_to_change)
+                        #print('filename:%s,count.:%d' % (fileName, fileName.count('.')))
+
+                        # os.rename(filePath + "\\" + fileName,
+                        #           filePath + "\\" + newName)
 
             else:
                 # 只处理Helix和HelixSE文件夹
@@ -43,15 +39,18 @@ for currentDir in dirs:
                     filePath = filePath + "\\" + fileName
                     helixFiles = os.listdir(filePath)
                     for helixFileName in helixFiles:
-                        helixIndexToChange = helixFileName.find('_')
-                        print('change helix file name:', helixFileName)
-                        helixNewName = dirNewName + \
-                            helixFileName[helixIndexToChange:]
-                        os.rename(filePath + "\\" + helixFileName,
-                                  filePath + "\\" + helixNewName)
+                        if helixFileName.count('.') == 2:
+                            print('change helix bad file with name:%s' % helixFileName)
+                            firstIndex = helixFileName.find('.')
+                            lastIndex = helixFileName.rfind('.')
+                            helixNewName = helixFileName[:firstIndex] + helixFileName[lastIndex:]
+                            print(helixNewName)
+                            os.rename(filePath + "\\" + helixFileName,
+                                      filePath + "\\" + helixNewName)
     except Exception as ex:
         print('Error happend:%s' % str(ex))
         # continue
 
-    os.rename(srcDir + "\\" + currentDir, srcDir + "\\" + dirNewName)
+    #os.rename(srcDir + "\\" + currentDir, srcDir + "\\" + dirNewName)
     dirCount += 1
+    index_to_change += 1
