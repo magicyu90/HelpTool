@@ -3,15 +3,15 @@ import codecs
 import os
 import shutil
 
-srcDir = r"H:\新建文件夹"
+srcDir = r"G:\英国卢顿\14\1401"
 #srcDir = "G:\\hao\\06-lixi"
 dirs = os.listdir(srcDir)
 helixName = "helix"
 helixSEName = "helixse"
 
-dirCount = 3138
+dirCount = 1
 for currentDir in dirs:
-    dirNewName = "CTIbomb%04d" % dirCount
+    dirNewName = "Other%04d" % dirCount
     try:
         files = os.listdir(os.path.join(srcDir, currentDir))
         for fileName in files:
