@@ -8,11 +8,11 @@ import os
 import shutil
 
 
-source_dir = r'C:\Users\shenyu1.NUCTECH\Desktop\安检机 图像'
+source_dir = r'C:\Users\shenyu1.NUCTECH\Desktop\TP'
 files = os.listdir(source_dir)
 
-categories = ['Control apparatus', 'Hazardous Substance', 'Gun', 'Explosives', 'charger', 'safe',
-              'Sharp weapon', 'Blunt instrument', 'Fire', 'Pyrotechnic products', 'Other', 'tool', 'ammunition']
+categories = ['Control_apparatus', 'Hazardous_Substance', 'Gun', 'Explosives', 'charger', 'safe',
+              'Sharp_weapon', 'Blunt_instrument', 'Fire', 'Pyrotechnic_products', 'Other', 'tool', 'ammunition']
 
 for file_name in files:
 
