@@ -9,7 +9,7 @@ import argparse
 from shutil import copyfile
 
 parser = argparse.ArgumentParser()
-parser.add_argument('-s', '--src', help='包含img的源文件夹')
+parser.add_argument('-s', '--src', help='包含jpg的源文件夹')
 parser.add_argument('-d', '--dest', help='目的文件夹')
 
 filePath = ''
@@ -37,7 +37,11 @@ for root, dirs, files in os.walk(filePath):
         ext = os.path.splitext(name)[-1]
         basename = os.path.splitext(name)[0]
         if ext == '.xml' and 'Helix' in dirs:
-            searchname = os.path.join(root, basename+'.img')
+            searchname = os.path.join(root, basename+'.jpg')
             if os.path.exists(searchname):
-                destname = os.path.join(destPath, basename+'.img')
+                destdir = os.path.join(destPath, basename)
+                if not os.path.exists(destdir):
+                    os.makedirs(destdir)
+                destname = os.path.join(destdir, basename+'.jpg')
                 shutil.copyfile(searchname, destname)
+
