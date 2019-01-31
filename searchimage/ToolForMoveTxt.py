@@ -33,10 +33,9 @@ else:
     raise Exception('没有指定目的文件夹')
 
 alldirs = []
+
 for root, dirs, files in os.walk(destPath):
     alldirs.extend(dirs)
-
-print(alldirs)
 
 for root, dirs, files in os.walk(filePath):
     for name in files:
@@ -46,7 +45,4 @@ for root, dirs, files in os.walk(filePath):
             last_14_digits = basename[-14:]
             is_exist = next((x for x in alldirs if last_14_digits in x), None)
             if is_exist is not None:
-                print('存在')
                 copyfile(os.path.join(root, name), os.path.join(destPath, is_exist, name))
-            else:
-                print('不存在')
