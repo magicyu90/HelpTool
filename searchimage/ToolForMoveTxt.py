@@ -1,6 +1,6 @@
 # coding=utf-8
 """
-对指定的目录里的txt和png拷贝到目标路径
+第二步：指定的目录里的txt和png拷贝到目标路径
 """
 
 import os
@@ -8,9 +8,9 @@ import shutil
 import argparse
 from shutil import copyfile
 
-parser = argparse.ArgumentParser()
-parser.add_argument('-s', '--src', help='包含xml和txt的源文件夹')
-parser.add_argument('-d', '--dest', help='目的文件夹')
+# parser = argparse.ArgumentParser()
+# parser.add_argument('-s', '--src', help='包含xml和txt的源文件夹')
+# parser.add_argument('-d', '--dest', help='目的文件夹')
 
 filePath = r'E:\testdest'
 destPath = r'E:\testmerge'
