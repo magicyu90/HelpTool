@@ -8,7 +8,9 @@ import os
 import shutil
 import itertools
 
-source_dir = r'C:\Users\shenyu1.NUCTECH\Desktop\问题箱包1'
+source_dir = r'C:\Users\shenyu1.NUCTECH\Desktop\test'
+category_file = r'C:\Users\shenyu1.NUCTECH\Desktop\category.txt'    
+
 files = os.listdir(source_dir)
 
 
@@ -27,7 +29,6 @@ for line in lines:
             category_dict[current_category] = []
         else:
             category_dict[current_category].append(line)
-
 
 categories = list(itertools.chain.from_iterable(category_dict.values()))
 print(categories)
